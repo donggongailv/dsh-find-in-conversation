@@ -22,6 +22,13 @@ DeepSeek Harness keeps long conversations in one scrollable transcript. This
 plugin adds a small, keyboard-first find bar so you can jump through matches
 without losing your place.
 
+## Screenshot
+
+![Find bar showing the current match, match count, highlight-all, and match case](assets/screenshot.webp)
+
+The screenshot shows the find bar over a conversation. Other matches stay yellow;
+the active match settles into blue after the 500 ms pulse.
+
 It is intentionally client-only: no host tools, no session events, no network
 requests, and no changes to the conversation text.
 

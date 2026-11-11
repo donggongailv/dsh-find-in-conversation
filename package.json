@@ -40,7 +40,8 @@
     "CHANGELOG.md",
     "CONTRIBUTING.md",
     "SECURITY.md",
-    "locale/*.json"
+    "locale/*.json",
+    "assets/screenshot.webp"
   ],
   "scripts": {
     "test": "node --test",
