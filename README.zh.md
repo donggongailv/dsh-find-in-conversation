@@ -49,7 +49,33 @@ macOS 上不会拦截 `Ctrl+F`；Windows/Linux 上不会拦截 `Meta` 组合。
 
 ## 安装
 
-本包是一个 DeepSeek Harness bundle。通过 DSH Plugin Manager 安装这个包目录，或将它加入 profile 的 bundle 列表。`package.json` 的 `dsh.client` 声明客户端模块，`cordis.patch.yml` 插入 `dsh-find-in-conversation` 插件行。
+已发布为 npm 包 **`dsh-find-in-conversation`**。
+
+### 在 DSH 中安装
+
+打开 DeepSeek Harness 的 **Plugins** 页面，安装名为
+`dsh-find-in-conversation` 的 bundle，然后启用。插件没有服务端配置。
+
+如果使用 DSH CLI，可以通过 plugin 命令安装（profile 参数请以当前版本的
+`dsh plugin --help` 为准）：
+
+```bash
+dsh plugin --profile <profile> install dsh-find-in-conversation
+```
+
+打开一个会话，在 macOS 上按 `⌘F`，在 Windows/Linux 上按 `Ctrl+F`。
+
+### 从源码安装
+
+开发时先克隆仓库，再通过 DSH Plugin Manager 安装目录，或加入 profile 的
+bundle 列表：
+
+```bash
+git clone https://github.com/donggongailv/dsh-find-in-conversation.git
+cd dsh-find-in-conversation
+npm install
+npm test
+```
 
 要求：
 

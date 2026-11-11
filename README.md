@@ -66,10 +66,34 @@ the `Meta` key is not intercepted.
 
 ## Install
 
-This package is a DeepSeek Harness bundle. Install the package directory through
-the DSH Plugin Manager or add it to a profile's bundle list. It declares its
-client module in `package.json` under `dsh.client` and inserts one plugin row
-from `cordis.patch.yml`.
+Published as **`dsh-find-in-conversation`** on npm.
+
+### From DSH
+
+Open the **Plugins** page in DeepSeek Harness, install the bundle named
+`dsh-find-in-conversation`, and enable it. The plugin has no host-side
+configuration.
+
+If you use the DSH CLI, install the bundle through the plugin command (check
+`dsh plugin --help` for the exact profile flag on your build):
+
+```bash
+dsh plugin --profile <profile> install dsh-find-in-conversation
+```
+
+Open a conversation and press `⌘F` on macOS or `Ctrl+F` on Windows/Linux.
+
+### From source
+
+For development, clone the repository and install the directory through the
+DSH Plugin Manager or your profile's bundle list:
+
+```bash
+git clone https://github.com/donggongailv/dsh-find-in-conversation.git
+cd dsh-find-in-conversation
+npm install
+npm test
+```
 
 Requirements:
 
