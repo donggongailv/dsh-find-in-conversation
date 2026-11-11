@@ -1,0 +1,17 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" role="img" aria-label="Find in conversation" xmlns="http://www.w3.org/2000/svg">
+  <rect x="11" y="5.5" width="16" height="16" rx="2" fill="#7FB7FC" fill-opacity="0.55" />
+  <rect x="5.5" y="7.5" width="25" height="21" rx="3" fill="url(#text-panel)" />
+  <path d="M9.5 12.5H18M9.5 16.5H15.5M9.5 20.5H14" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+  <circle cx="22.5" cy="20.5" r="5.1" fill="#FFFFFF" fill-opacity="0.14" stroke="url(#text-lens)" stroke-width="2.5" />
+  <path d="M26.4 24.4 31 29" stroke="#45D9E7" stroke-width="3.2" stroke-linecap="round" />
+  <defs>
+    <linearGradient id="text-panel" x1="7" y1="8" x2="29" y2="29" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6DB9FB" />
+      <stop offset="1" stop-color="#3650DE" />
+    </linearGradient>
+    <linearGradient id="text-lens" x1="17.5" y1="15" x2="27.5" y2="25" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#45D9E7" />
+      <stop offset="1" stop-color="#67C7FE" />
+    </linearGradient>
+  </defs>
+</svg>

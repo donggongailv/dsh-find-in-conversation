@@ -1,0 +1,75 @@
+{
+  "name": "dsh-find-in-conversation",
+  "version": "1.0.0",
+  "description": "A macOS-style find bar for searching the current DeepSeek Harness conversation.",
+  "license": "MIT",
+  "author": "imhansai",
+  "type": "module",
+  "main": "index.js",
+  "icon": "./assets/icon.svg",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "find",
+    "search",
+    "conversation",
+    "ui"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0-0",
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./assets/icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "assets/icon.svg",
+    "client.js",
+    "cordis.patch.yml",
+    "index.js",
+    "LICENSE",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "locale/*.json"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check client.js && node --check index.js && node --test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donggongailv/dsh-find-in-conversation.git"
+  },
+  "homepage": "https://github.com/donggongailv/dsh-find-in-conversation#readme",
+  "bugs": {
+    "url": "https://github.com/donggongailv/dsh-find-in-conversation/issues"
+  }
+}

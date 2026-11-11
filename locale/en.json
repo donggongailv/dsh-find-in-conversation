@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Conversation find",
+    "description": "A macOS-style find bar for the current conversation, with match case, highlight all, wrap feedback, and IME-aware search."
+  }
+}
