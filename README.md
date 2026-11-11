@@ -66,22 +66,36 @@ the `Meta` key is not intercepted.
 
 ## Install
 
-Published as **`dsh-find-in-conversation`** on npm.
+The bundle is distributed as **`dsh-find-in-conversation`**. Until the npm
+release is available, install it directly from GitHub.
 
-### From DSH
+### From GitHub
 
-Open the **Plugins** page in DeepSeek Harness, install the bundle named
-`dsh-find-in-conversation`, and enable it. The plugin has no host-side
-configuration.
+Open the **Plugins** page in DeepSeek Harness, install the external bundle from:
 
-If you use the DSH CLI, install the bundle through the plugin command (check
-`dsh plugin --help` for the exact profile flag on your build):
+```text
+git+https://github.com/donggongailv/dsh-find-in-conversation.git
+```
+
+Alternatively, use the DSH CLI (check `dsh plugin --help` for the exact profile
+flag on your build):
+
+```bash
+dsh plugin --profile <profile> install git+https://github.com/donggongailv/dsh-find-in-conversation.git
+```
+
+Enable the bundle, open a conversation, and press `⌘F` on macOS or `Ctrl+F` on
+Windows/Linux.
+
+### From npm
+
+Once the npm release is published:
 
 ```bash
 dsh plugin --profile <profile> install dsh-find-in-conversation
 ```
 
-Open a conversation and press `⌘F` on macOS or `Ctrl+F` on Windows/Linux.
+The package is also installable by name from the DSH **Plugins** page.
 
 ### From source
 
