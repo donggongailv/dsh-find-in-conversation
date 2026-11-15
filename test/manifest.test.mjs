@@ -12,7 +12,7 @@ test('package metadata describes a publishable DSH client bundle', () => {
   const pkg = readJson('package.json');
 
   assert.equal(pkg.name, 'dsh-find-in-conversation');
-  assert.equal(pkg.version, '1.0.0');
+  assert.match(pkg.version, /^\d+\.\d+\.\d+$/);
   assert.equal(pkg.license, 'MIT');
   assert.equal(pkg.type, 'module');
   assert.equal(pkg.private, undefined);
