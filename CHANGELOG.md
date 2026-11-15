@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-15
+
+### Changed
+
+- Updated the install documentation to use `dsh plugin --profile <profile> add`
+  and to make npm the primary installation path. No runtime behavior changed.
+
 ## [1.0.0] - 2026-11-10
 
 ### Added
@@ -29,5 +36,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   avoids `Ctrl+F` on macOS.
 - English and Chinese UI copy, plugin metadata, and an original SVG icon.
 
-[Unreleased]: https://github.com/donggongailv/dsh-find-in-conversation/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/donggongailv/dsh-find-in-conversation/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/donggongailv/dsh-find-in-conversation/releases/tag/v1.0.1
 [1.0.0]: https://github.com/donggongailv/dsh-find-in-conversation/releases/tag/v1.0.0

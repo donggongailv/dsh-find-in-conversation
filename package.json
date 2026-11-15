@@ -1,6 +1,6 @@
 {
   "name": "dsh-find-in-conversation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A macOS-style find bar for searching the current DeepSeek Harness conversation.",
   "license": "MIT",
   "author": "imhansai",

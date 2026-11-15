@@ -67,7 +67,13 @@ macOS 上不会拦截 `Ctrl+F`；Windows/Linux 上不会拦截 `Meta` 组合。
 `dsh plugin --help` 为准）：
 
 ```bash
-dsh plugin --profile <profile> install dsh-find-in-conversation
+dsh plugin --profile <profile> add dsh-find-in-conversation
+```
+
+卸载：
+
+```bash
+dsh plugin --profile <profile> remove dsh-find-in-conversation
 ```
 
 打开会话，在 macOS 上按 `⌘F`，在 Windows/Linux 上按 `Ctrl+F`。
@@ -83,7 +89,7 @@ git+https://github.com/donggongailv/dsh-find-in-conversation.git
 使用 **Plugins** 页面的外部 bundle 安装，或：
 
 ```bash
-dsh plugin --profile <profile> install git+https://github.com/donggongailv/dsh-find-in-conversation.git
+dsh plugin --profile <profile> add git+https://github.com/donggongailv/dsh-find-in-conversation.git
 ```
 
 ### 从源码安装

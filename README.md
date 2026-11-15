@@ -85,7 +85,13 @@ If you use the DSH CLI, install through the plugin command (check
 `dsh plugin --help` for the exact profile flag on your build):
 
 ```bash
-dsh plugin --profile <profile> install dsh-find-in-conversation
+dsh plugin --profile <profile> add dsh-find-in-conversation
+```
+
+Remove it with:
+
+```bash
+dsh plugin --profile <profile> remove dsh-find-in-conversation
 ```
 
 Open a conversation and press `⌘F` on macOS or `Ctrl+F` on Windows/Linux.
@@ -101,7 +107,7 @@ git+https://github.com/donggongailv/dsh-find-in-conversation.git
 Use the **Plugins** page's external-bundle install or:
 
 ```bash
-dsh plugin --profile <profile> install git+https://github.com/donggongailv/dsh-find-in-conversation.git
+dsh plugin --profile <profile> add git+https://github.com/donggongailv/dsh-find-in-conversation.git
 ```
 
 ### From source
