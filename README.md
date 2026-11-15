@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://github.com/donggongailv/dsh-find-in-conversation/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/donggongailv/dsh-find-in-conversation/actions/workflows/ci.yml/badge.svg"></a>
   <a href="https://github.com/donggongailv/dsh-find-in-conversation/blob/main/LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="https://www.npmjs.com/package/dsh-find-in-conversation"><img alt="npm" src="https://img.shields.io/npm/v/dsh-find-in-conversation"></a>
   <a href="https://github.com/donggongailv/dsh-find-in-conversation"><img alt="DeepSeek Harness plugin" src="https://img.shields.io/badge/DeepSeek%20Harness-plugin-4c6ef5"></a>
 </p>
 
@@ -73,36 +74,35 @@ the `Meta` key is not intercepted.
 
 ## Install
 
-The bundle is distributed as **`dsh-find-in-conversation`**. Until the npm
-release is available, install it directly from GitHub.
+Install the bundle from npm as **`dsh-find-in-conversation`**.
 
-### From GitHub
+### From DSH
 
-Open the **Plugins** page in DeepSeek Harness, install the external bundle from:
+Open the **Plugins** page in DeepSeek Harness, install
+`dsh-find-in-conversation`, and enable it.
 
-```text
-git+https://github.com/donggongailv/dsh-find-in-conversation.git
-```
-
-Alternatively, use the DSH CLI (check `dsh plugin --help` for the exact profile
-flag on your build):
-
-```bash
-dsh plugin --profile <profile> install git+https://github.com/donggongailv/dsh-find-in-conversation.git
-```
-
-Enable the bundle, open a conversation, and press `⌘F` on macOS or `Ctrl+F` on
-Windows/Linux.
-
-### From npm
-
-Once the npm release is published:
+If you use the DSH CLI, install through the plugin command (check
+`dsh plugin --help` for the exact profile flag on your build):
 
 ```bash
 dsh plugin --profile <profile> install dsh-find-in-conversation
 ```
 
-The package is also installable by name from the DSH **Plugins** page.
+Open a conversation and press `⌘F` on macOS or `Ctrl+F` on Windows/Linux.
+
+### From GitHub
+
+Installing directly from the repository is also supported:
+
+```text
+git+https://github.com/donggongailv/dsh-find-in-conversation.git
+```
+
+Use the **Plugins** page's external-bundle install or:
+
+```bash
+dsh plugin --profile <profile> install git+https://github.com/donggongailv/dsh-find-in-conversation.git
+```
 
 ### From source
 
@@ -185,6 +185,7 @@ license files. `npm run check` also runs `node --check client.js`.
 
 ## Links
 
+- [npm package](https://www.npmjs.com/package/dsh-find-in-conversation)
 - [Repository](https://github.com/donggongailv/dsh-find-in-conversation)
 - [Issues](https://github.com/donggongailv/dsh-find-in-conversation/issues)
 - [Contributing](CONTRIBUTING.md)

@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://github.com/donggongailv/dsh-find-in-conversation/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/donggongailv/dsh-find-in-conversation/actions/workflows/ci.yml/badge.svg"></a>
   <a href="https://github.com/donggongailv/dsh-find-in-conversation/blob/main/LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="https://www.npmjs.com/package/dsh-find-in-conversation"><img alt="npm" src="https://img.shields.io/npm/v/dsh-find-in-conversation"></a>
   <a href="https://github.com/donggongailv/dsh-find-in-conversation"><img alt="DeepSeek Harness plugin" src="https://img.shields.io/badge/DeepSeek%20Harness-plugin-4c6ef5"></a>
 </p>
 
@@ -55,34 +56,35 @@ macOS 上不会拦截 `Ctrl+F`；Windows/Linux 上不会拦截 `Meta` 组合。
 
 ## 安装
 
-bundle 名称为 **`dsh-find-in-conversation`**。在 npm 发布之前，可以直接从
-GitHub 安装。
+从 npm 安装 **`dsh-find-in-conversation`**。
 
-### 从 GitHub 安装
+### 在 DSH 中安装
 
-打开 DeepSeek Harness 的 **Plugins** 页面，从外部 bundle 安装：
+打开 DeepSeek Harness 的 **Plugins** 页面，安装
+`dsh-find-in-conversation`，然后启用。
 
-```text
-git+https://github.com/donggongailv/dsh-find-in-conversation.git
-```
-
-也可以使用 DSH CLI（profile 参数请以当前版本的 `dsh plugin --help` 为准）：
-
-```bash
-dsh plugin --profile <profile> install git+https://github.com/donggongailv/dsh-find-in-conversation.git
-```
-
-启用插件，打开一个会话，在 macOS 上按 `⌘F`，在 Windows/Linux 上按 `Ctrl+F`。
-
-### 从 npm 安装
-
-npm 发布后：
+如果使用 DSH CLI，可以通过 plugin 命令安装（profile 参数请以当前版本的
+`dsh plugin --help` 为准）：
 
 ```bash
 dsh plugin --profile <profile> install dsh-find-in-conversation
 ```
 
-也可以在 DSH 的 **Plugins** 页面按包名安装。
+打开会话，在 macOS 上按 `⌘F`，在 Windows/Linux 上按 `Ctrl+F`。
+
+### 从 GitHub 安装
+
+也支持直接从仓库安装：
+
+```text
+git+https://github.com/donggongailv/dsh-find-in-conversation.git
+```
+
+使用 **Plugins** 页面的外部 bundle 安装，或：
+
+```bash
+dsh plugin --profile <profile> install git+https://github.com/donggongailv/dsh-find-in-conversation.git
+```
 
 ### 从源码安装
 
@@ -150,6 +152,7 @@ npm run format:check
 
 ## 链接
 
+- [npm 包](https://www.npmjs.com/package/dsh-find-in-conversation)
 - [仓库](https://github.com/donggongailv/dsh-find-in-conversation)
 - [Issues](https://github.com/donggongailv/dsh-find-in-conversation/issues)
 - [贡献指南](CONTRIBUTING.md)
